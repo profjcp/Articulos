@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Articulorsoe"] 1739802985.0523 "Articulorsoe.bcf" "Articulorsoe.bbl" "Articulorsoe" 1739802994.02538 0
-  "Articulorsoe.bcf" 1739802993.86993 132943 4798667521d93e52559c0bf3724ab012 "pdflatex"
+["biber Articulorsoe"] 1739802985.0523 "Articulorsoe.bcf" "Articulorsoe.bbl" "Articulorsoe" 1739804948.42264 0
+  "Articulorsoe.bcf" 1739804948.26512 132943 4798667521d93e52559c0bf3724ab012 "pdflatex"
   "referencias.bib" 1739675266.59864 619 fb1e1097851f75e30b2f8c074176216e ""
   (generated)
   "Articulorsoe.bbl"
   "Articulorsoe.blg"
   (rewritten before read)
-["pdflatex"] 1739802992.18143 "/Users/oceanjungle/ArticulosJC/Articulos/Articulorsoe.tex" "Articulorsoe.pdf" "Articulorsoe" 1739802994.02577 0
-  "/Users/oceanjungle/ArticulosJC/Articulos/Articulorsoe.tex" 1739799602.89495 29562 3b48c617c11f44818e80362ca0f0fa2f ""
+["pdflatex"] 1739804946.45597 "/Users/oceanjungle/ArticulosJC/Articulos/Articulorsoe.tex" "Articulorsoe.pdf" "Articulorsoe" 1739804948.42304 0
+  "/Users/oceanjungle/ArticulosJC/Articulos/Articulorsoe.tex" 1739804946.15027 29606 43b1b664dd385c4501f526c6d3304d99 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -147,11 +147,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1719980056.44756 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1719979921 8221452 41cef899e7a86cbe701ed54d5b7080a0 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Articulorsoe.aux" 1739802993.86127 1945 a619520fa337744cd5ed0f01fe9edd15 "pdflatex"
+  "Articulorsoe.aux" 1739804948.2576 1945 a619520fa337744cd5ed0f01fe9edd15 "pdflatex"
   "Articulorsoe.bbl" 1739802988.66984 2938 c6126f6f24bfad92e73af368b47eba9f "biber Articulorsoe"
-  "Articulorsoe.out" 1739802993.86815 839 2970bf35f487c593ab15d0d48df1a271 "pdflatex"
-  "Articulorsoe.run.xml" 1739802993.8709 2584 482e1e70c862890acfde617edef599fb "pdflatex"
-  "Articulorsoe.tex" 1739799602.89495 29562 3b48c617c11f44818e80362ca0f0fa2f ""
+  "Articulorsoe.out" 1739804948.26355 839 2970bf35f487c593ab15d0d48df1a271 "pdflatex"
+  "Articulorsoe.run.xml" 1739804948.26602 2584 482e1e70c862890acfde617edef599fb "pdflatex"
+  "Articulorsoe.tex" 1739804946.15027 29606 43b1b664dd385c4501f526c6d3304d99 ""
   "image/LatexD.png" 1739326816.50136 47081 c6b1e825d5ba91a832bf560a38a1adff ""
   "image/logo.jpeg" 1739240458.28927 90860 96fec092b3788c8fb7f6c9440ca16bd9 ""
   (generated)
