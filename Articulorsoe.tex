@@ -93,7 +93,7 @@
 % Headers config
 % Cambiar Volumen, Numero y páginas
 \lhead{
-    Fronteras Tecnologicas, Febrero 20xx, Vol. x, No. x, páginas xx – xx\\Disponible en línea en \href{https://www.soe.uagrm.edu.bo/revistas/FTEC}{soe.uagrm.edu.bo/revistas/FTEC}\\ISSN: xx-xx, Postgrado de Ingenieria en Ciencias de la Computación y Telecomunicaciones, UAGRM
+    Fronteras Tecnologicas, Febrero 20xx, Vol. x, No. x, páginas xx – xx\\Disponible en línea para descarga en: \href{https://github.com/profjcp/Articulos/}{https://github.com/profjcp/Articulos/}\\ISSN: xx-xx, Postgrado de ingeniería en Ciencias de la Computación y Telecomunicaciones, UAGRM
 }
 \rhead{
     \includegraphics[width=1.0cm]{logo}}
@@ -119,7 +119,7 @@ https://orcid.org/0009-0009-9117-2441}
     Se concluye que LaTeX eleva el prestigio académico y facilita la difusión de la investigación, aunque requiere capacitación inicial.} 
     \vspace{0.5cm}
 
-    \textbf{Palabras clave:} Procesador de texto, Herramientas de investigacion, Tipografía, Gestion referencial, LaTeX.
+    \textbf{Palabras clave:} Procesador de texto, Herramientas de investigación, Tipografía, Gestión de referencial, LaTeX.
 \end{abstract}
 
 
@@ -139,53 +139,51 @@ https://orcid.org/0009-0009-9117-2441}
 
     \section{Introducción}
 
-LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física \cite{knuth1997art}. 
-A diferencia de los procesadores de texto tradicionales, LaTeX ofrece precisión y control tipográfico, manejo excepcional de matemáticas y símbolos, gestión eficiente de referencias y citas, estructura y organización de documentos, y portabilidad y compatibilidad. 
-Universidades de renombre como el MIT y Stanford, así como organizaciones científicas como la Sociedad Americana de Física (APS), utilizan LaTeX para sus publicaciones. Este estudio tiene como finalidad dar a conocer las ventajas de LaTeX a los investigadores, proporcionando una plantilla base para la unidad de posgrado SOE.\\
-\textbf{¿Qué es Latex?}
-
-TeX es un programa de composición tipográfica creado por Donald Knuth, originalmente para su obra maestra, The Art of Computer Programming. Toma un archivo de texto "plano" y lo convierte en un documento de alta calidad para imprimir o visualizar en pantalla. LaTeX es un sistema de macros construido sobre TeX que tiene como objetivo simplificar su uso y automatizar muchas tareas comunes de formato. Es el estándar de facto para revistas y libros académicos en varios campos, como matemáticas y física, y ofrece algunas de las mejores tipografías que el software libre tiene para ofrecer.\@cite{knuth1997art}
-
-LaTeX se ha convertido en una herramienta esencial para investigadores en ciencias de la computación debido a una combinación de propiedades que lo distinguen de los procesadores de texto tradicionales. Estas son algunas de las principales razones por las que LaTeX es tan valioso en este campo:
-
+LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física (\cite{knuth1997art}). 
+A diferencia de los procesadores de texto tradicionales, LaTeX ofrece precisión y control tipográfico, manejo excepcional de matemáticas y símbolos, gestión eficiente de referencias y citas, estructura y organización de documentos, portabilidad y compatibilidad. 
+Ejemplos: Universidades de renombre como el MIT y Stanford, organizaciones científicas como la Sociedad Americana de Física (APS), utilizan LaTeX para sus publicaciones.
+\textbf{¿Qué es Latex?}\\
+TeX es un programa de composición tipográfica desarrollado por Donald Knuth para su obra maestra The Art of Computer Programming. 
+Su función es transformar un archivo de texto plano en un documento de alta calidad, optimizado para impresión y visualización en pantalla. 
+Sobre esta base, se creó LaTeX, un sistema de macros diseñado para facilitar el uso de TeX y automatizar tareas comunes de formato.\\ 
+LaTeX se ha convertido en un referente para la publicación académica en disciplinas como matemáticas y física, debido a su capacidad para generar documentos de gran precisión tipográfica y a la calidad excepcional de sus fuentes en el ámbito del software libre.\\
+Estas son algunas de las principales razones por las que LaTeX es tan valioso en este campo:
 \begin{enumerate}  
     \item Precisión y control tipográfico:
-Calidad de la presentación: LaTeX ofrece un control preciso sobre la tipografía, el espaciado, la alineación y otros detalles de diseño, lo que resulta en documentos con una apariencia profesional y pulcra.
-Énfasis en el contenido: Al separar el contenido del formato, LaTeX permite a los investigadores concentrarse en la sustancia de su trabajo, dejando que el sistema se encargue de la presentación. 
+    \begin{enumerate}
+        \item Calidad de la presentación: LaTeX ofrece un control preciso sobre la tipografía, el espaciado, la alineación y otros detalles de diseño, lo que resulta en documentos con una apariencia profesional y pulcra.
+        \item Énfasis en el contenido: Al separar el contenido del formato, LaTeX permite a los investigadores concentrarse en la sustancia de su trabajo, dejando que el sistema se encargue de la presentación. 
+    \end{enumerate}
     \item Manejo excepcional de matemáticas y símbolos:
-Notación matemática avanzada: LaTeX facilita la escritura de ecuaciones complejas, fórmulas y símbolos matemáticos con una claridad y precisión inigualables.
-Estándar en la comunidad científica: LaTeX se ha convertido en el estándar para la publicación de artículos científicos y técnicos, especialmente en campos como las matemáticas, la física y la informática.
+    \begin{enumerate}
+        \item Notación matemática avanzada: LaTeX facilita la escritura de ecuaciones complejas, fórmulas y símbolos matemáticos con una claridad y precisión inigualables.
+        \item Estándar en la comunidad científica: LaTeX se ha convertido en el estándar para la publicación de artículos científicos y técnicos, especialmente en campos como las matemáticas, la física y la informática.  
+    \end{enumerate}
     \item Gestión eficiente de referencias y citas:
-Automatización de referencias: LaTeX simplifica la gestión de referencias bibliográficas, citas y notas al pie de página, lo que ahorra tiempo y reduce errores.
-Consistencia y precisión: LaTeX garantiza la consistencia y precisión en el formato de las referencias, lo cual es crucial para la credibilidad de la investigación.
+    \begin{enumerate}
+        \item Automatización de referencias: LaTeX simplifica la gestión de referencias bibliográficas, citas y notas al pie de página, lo que ahorra tiempo y reduce errores.
+        \item Consistencia y precisión: LaTeX garantiza la consistencia y precisión en el formato de las referencias, lo cual es crucial para la credibilidad de la investigación.
+    \end{enumerate}
 	\item Estructura y organización de documentos:
-Organización jerárquica: LaTeX facilita la organización de documentos extensos en secciones, subsecciones, capítulos y otras estructuras jerárquicas.
-Generación automática de índices y tablas de contenido: LaTeX puede generar automáticamente índices, tablas de contenido y listas de figuras y tablas, lo que facilita la navegación y la consulta de documentos.
-	\item Portabilidad y compatibilidad:Independencia de plataforma: Los documentos LaTeX son independientes de la plataforma, lo que significa que se pueden crear y visualizar en diferentes sistemas operativos sin perder calidad ni formato.
-Formatos de salida versátiles: LaTeX permite generar documentos en diversos formatos, como PDF, PostScript y HTML, lo que facilita su distribución y publicación en diferentes medios.
-	\item Comunidad y recursos:
-Amplia comunidad de usuarios: LaTeX cuenta con una gran comunidad de usuarios y desarrolladores que ofrecen apoyo, recursos y paquetes adicionales para extender sus funcionalidades.
-Documentación exhaustiva: LaTeX dispone de una documentación completa y detallada, así como de numerosos tutoriales y cursos en línea para aprender a utilizarlo.
-\end{enumerate}  
+	\begin{enumerate}
+        \item Organización jerárquica: LaTeX facilita la organización de documentos extensos en secciones, subsecciones, capítulos y otras estructuras jerárquicas.
+        \item Generación automática de índices y tablas de contenido: LaTeX puede generar automáticamente índices, tablas de contenido y listas de figuras y tablas, lo que facilita la navegación y la consulta de documentos.  
+    \end{enumerate}
+	\item Portabilidad y compatibilidad:
+	\begin{enumerate}
+        \item Independencia de plataforma: Los documentos LaTeX son independientes de la plataforma, lo que significa que se pueden crear y visualizar en diferentes sistemas operativos sin perder calidad ni formato.
+        \item Formatos de salida versátiles: LaTeX permite generar documentos en diversos formatos, como PDF, PostScript y HTML, lo que facilita su distribución y publicación en diferentes medios.   
+    \end{enumerate}
+    \item Comunidad y recursos:
+    \begin{enumerate}
+        \item Amplia comunidad de usuarios: LaTeX cuenta con una gran comunidad de usuarios y desarrolladores que ofrecen apoyo, recursos y paquetes adicionales para extender sus funcionalidades.
+        \item Documentación exhaustiva: LaTeX dispone de una documentación completa y detallada, así como de numerosos tutoriales y cursos en línea para aprender a utilizarlo.  
+    \end{enumerate}
+\end{enumerate} 
+ 
+{\raggedleft \textbf{¿Quienes emplean Latex?}}
 
-
-%\begin{figure}[htbp]
-%\centerline{\includegraphics{Figures/GenAiGra.png}}%
-%\caption{Diagram of a typical GenAI application architecture.}
-%\label{fig}
-%\end{figure}
-
-%\begin{figure}[ht]
-% \centering
-% \makebox[\linewidth][c]{\includegraphics[width=1\linewidth]{Figures/GenAIGra.png}}%
-% \caption{Diagram of a typical GenAI application architecture}
-% \label{fig-1}
-%\end{figure}
-
-
-\textbf{¿Quienes emplean Latex?}
-
-Instituciones que utilizan LaTeX:
+{\raggedleft \textbf{Instituciones que utilizan LaTeX:}}
 
 \begin{itemize}
 	\item Universidades de renombre: Universidades líderes como el MIT, Stanford, Harvard, Oxford y Cambridge, entre muchas otras, utilizan LaTeX para la preparación de tesis, artículos y otros documentos académicos.
@@ -193,7 +191,7 @@ Instituciones que utilizan LaTeX:
 	\item Organizaciones científicas: Organizaciones como la Sociedad Americana de Física (APS), la Asociación para la Maquinaria de la Computación (ACM) y la Sociedad de Matemáticas Aplicadas e Industriales (SIAM) utilizan LaTeX como estándar para sus publicaciones.
 \end{itemize}
 
-Publicaciones que utilizan LaTeX como estándar:
+{\raggedleft \textbf{Publicaciones que utilizan LaTeX como estándar:}}
 
 \begin{itemize}
 	\item Revistas científicas: La mayoría de las revistas científicas de alto impacto en áreas como física, matemáticas, informática, ingeniería y ciencias de la computación requieren que los manuscritos se presenten en formato LaTeX.
@@ -201,50 +199,32 @@ Publicaciones que utilizan LaTeX como estándar:
 	\item Libros académicos: Muchos libros de texto y obras de referencia en ciencias y matemáticas se publican utilizando LaTeX debido a su capacidad para manejar notaciones matemáticas complejas y producir documentos de alta calidad.
 \end{itemize}
 
-Fuentes de datos que emplean LaTeX:
+{\raggedleft \textbf{Fuentes de datos que emplean LaTeX:}}
 \begin{itemize}
 	\item Google Scholar: Google Scholar indexa artículos científicos y otros documentos académicos en una amplia variedad de disciplinas. Muchos de estos documentos están escritos en LaTeX, especialmente en áreas como matemáticas, física e informática.
 	\item Scopus: Scopus es una base de datos bibliográfica de Elsevier que indexa una gran cantidad de literatura científica, incluyendo artículos de revistas, actas de conferencias y libros. Muchos de los documentos indexados en Scopus están escritos en LaTeX.
 	\item Web of Science: Web of Science es otra base de datos bibliográfica ampliamente utilizada que indexa publicaciones científicas de diversas disciplinas. Al igual que Scopus, muchos de los documentos indexados en Web of Science están escritos en LaTeX.
 \end{itemize}
 
-\textbf{¿Esquema de compilacion de Latex?}\\
-El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
-\begin{figure}[ht]
-    \centering
-    \makebox[\linewidth][c]{\includegraphics[width=0.5\linewidth]{LatexD.png}}%
-    \caption{Esquema de compilacion de Latex}
-    \label{fig:LatexD}
-\textit{nota: En la figura se muestra el proceso de compilación de un documento LaTeX. El archivo fuente (.tex) se compila utilizando un motor LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX) para generar un archivo PDF. El proceso puede requerir varias pasadas para resolver referencias cruzadas, citas bibliográficas y otros elementos.}
-\end{figure}
-
 \newpage % Agrega o elimina estos saltos de página de acuerdo a tus necesidades.
 \vspace{0.5cm}
 
-    \section{Material y Metodo}
-
-
-    El nombre de éste segundo título dependerá de cómo se haya estructurado el artículo.
+    \section{Resultados}
+    El estudio destaca las numerosas ventajas de LaTeX para investigadores, incluyendo su capacidad para generar documentos con calidad tipográfica superior, manejo eficiente de fórmulas matemáticas y símbolos complejos, y automatización en la gestión de referencias y citas bibliográficas. 
+    Estas características son especialmente valiosas en la investigación en ciencias de la computación, donde la precisión y presentación profesional son fundamentales. 
+    Además, se proporcionará una plantilla base como apoyo a los investigadores de la unidad de posgrado SOE.
+    \subsection{Fases a tomar en cuenta para la elaboración de una plantilla base en Latex :}
     
-    Se debe considerar una sección en la cual se presente la metodología a seguir, utilizando de preferencia un mapa conceptual (esquemas, diagrama a bloques, de flujo, etc.) para mostrar gráficamente la metodología utilizada. Algunas de las secciones que pudieran llevar la estructura del artículo son: Descripción del problema, Metodología, Modelación y Simulación, Diseño, Manufactura, Integración, Metodología, etc.
-
-    \subsection{Diseño del estudio}
-    Este estudio tiene como finalidad dar a conocer las numerosas ventajas que LaTeX ofrece a los investigadores, incluyendo su capacidad para generar documentos con una calidad tipográfica superior, su eficiente manejo de fórmulas matemáticas y símbolos complejos, y su automatización en la gestión de referencias y citas bibliográficas. Estas características son especialmente valiosas en el campo de la investigación en ciencias de la computación, donde la precisión y la presentación profesional son fundamentales, también se dotara de una plantilla base como apoyo a los investigadores de la unidad de posgrado SOE.
-
-    Fases a tomar en cuenta para la elaboración de una plantilla base en Latex :
-    
-    Definir los requisitos
+{\raggedleft \textbf{Definir los requisitos:}}
     \begin{enumerate}
-     
         \item Tipo de documentos: Determina qué tipo de documentos se crearán con la plantilla (tesis, artículos, presentaciones, informes, etc.). Cada uno tendrá requisitos específicos de formato.
         \item Normativa de la SOE: Investiga si la unidad de posgrado tiene lineamientos de formato específicos (márgenes, tamaño de letra, espaciado, etc.).
-    Estilo de citación: Define el estilo de citación requerido (APA, MLA, Chicago, etc.) y los paquetes de LaTeX necesarios para implementarlo.
-    Elementos obligatorios: Identifica los elementos que deben estar presentes en todos los documentos (portada, índice, resumen, bibliografía, etc.).
+        \item Estilo de citación: Define el estilo de citación requerido (APA, MLA, Chicago, etc.) y los paquetes de LaTeX necesarios para implementarlo.
+        \item Elementos obligatorios: Identifica los elementos que deben estar presentes en todos los documentos (portada, índice, resumen, bibliografía, etc.).
     \end{enumerate}
     
-    Estructura básica de la plantilla
+{\raggedleft \textbf{Estructura básica de la plantilla:}}
     \begin{enumerate}
-    
         \item Clase de documento: Elige la clase de documento adecuada (article, book, report, beamer, etc.).
         \item Paquetes esenciales: Incluye los paquetes básicos para el manejo de idiomas, codificación de caracteres, matemáticas, gráficos y otros elementos comunes.
         \item Definición de comandos: Crea comandos personalizados para abreviar tareas repetitivas (encabezados, pies de página, formatos de texto, etc.).
@@ -252,17 +232,17 @@ El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
     Configuración de márgenes y encabezados: Establece los márgenes, encabezados y pies de página según la normativa de la SOE.
     \end{enumerate}
 
-    Elementos específicos de la plantilla
+{\raggedleft \textbf{Elementos específicos de la plantilla:}}
     \begin{enumerate}
         \item Estilo de citación: Configura el estilo de citación utilizando paquetes como biblatex o natbib.
-    Tipografía: Define la tipografía para el cuerpo del texto, los títulos, las secciones y otros elementos.
+        \item Tipografía: Define la tipografía para el cuerpo del texto, los títulos, las secciones y otros elementos.
         \item Numeración de páginas: Configura la numeración de páginas (arábigos, romanos, etc.) y su ubicación.
-    Tablas y figuras: Crea estilos para la presentación de tablas y figuras, incluyendo leyendas y referencias cruzadas.
+        \item Tablas y figuras: Crea estilos para la presentación de tablas y figuras, incluyendo leyendas y referencias cruzadas.
         \item Código fuente: Incluye un estilo para la presentación de código fuente, resaltando la sintaxis y utilizando fuentes monoespaciadas.
         \item Matemáticas: Asegúrate de que la plantilla maneje correctamente las ecuaciones y símbolos matemáticos.
     \end{enumerate}
     
-    Personalización y refinamiento
+{\raggedleft \textbf{Personalización y refinamiento:}}
     \begin{enumerate}
     
         \item Colores y logotipos: Incorpora los colores y logotipos de la SOE.
@@ -271,18 +251,47 @@ El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
         \item Ejemplos de uso: Incluye ejemplos de cómo utilizar la plantilla para diferentes tipos de documentos.
     \end{enumerate}
     
-    Documentación y distribución
+{\raggedleft \textbf{Documentación y distribución:}}
     \begin{enumerate}
         \item Manual de usuario: Crea un manual de usuario que explique cómo utilizar la plantilla y personalizarla.
         \item Plantilla en línea: Considera la posibilidad de crear una plantilla en línea en Overleaf para facilitar su uso y colaboración.
         \item Repositorio de la plantilla: Publica la plantilla en un repositorio (GitHub, GitLab, etc.) para que esté disponible para todos los miembros de la SOE. \url{https://github.com/profjcp/Articulos/}
     \end{enumerate}
+    \subsection{Esquema de compilacion de LaTex:}
+    El proceso de compilación de un documento LaTeX es esencial para transformar el código fuente en un documento final formateado. 
+    A diferencia de los procesadores de texto tradicionales, LaTeX no formatea el documento directamente mientras se escribe. 
+    En cambio, se utilizan comandos y etiquetas para marcar la estructura y el contenido del documento, y luego un programa llamado "motor de LaTeX" se encarga de procesar estas instrucciones y generar el documento final.
+    
+    \textbf{Aquí hay algunos puntos clave sobre el proceso de compilación:}
+
+    Código fuente: El documento LaTeX comienza como un archivo de texto con extensión .tex. Este archivo contiene el texto del documento, así como los comandos y etiquetas que controlan el formato, la estructura y otros elementos.
+
+    Motor de LaTeX: El motor de LaTeX es el programa que interpreta el código fuente y genera el documento formateado. Hay varios motores de LaTeX disponibles, como pdfTeX, XeTeX y LuaTeX, cada uno con sus propias características y capacidades.
+
+    Proceso de compilación: El proceso de compilación generalmente implica varios pasos. Primero, el motor de LaTeX lee el archivo .tex y procesa las instrucciones. Luego, genera uno o varios archivos intermedios, como archivos .dvi (Device Independent) o .pdf (Portable Document Format). Finalmente, estos archivos intermedios se utilizan para crear el documento final en el formato deseado.
+
+    Archivos auxiliares: Durante el proceso de compilación, LaTeX también puede generar archivos auxiliares que contienen información sobre el documento, como la tabla de contenidos, la bibliografía y las referencias cruzadas. Estos archivos se utilizan en compilaciones posteriores para garantizar la coherencia del documento.
+
+    Iteraciones: En algunos casos, puede ser necesario compilar el documento varias veces para que todos los elementos se formateen correctamente. Por ejemplo, si el documento contiene referencias cruzadas, es posible que sea necesario compilarlo dos veces para que los números de página y las referencias se actualicen correctamente.
+
+    Una vez que se ha completado el proceso de compilación, se puede ver el documento final en un visor de PDF o imprimirlo. El documento resultante tendrá una calidad tipográfica profesional y se verá igual independientemente del sistema operativo o el software utilizado para visualizarlo.
+
+
+    El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
+    \begin{figure}[ht]
+        \centering
+        \makebox[\linewidth][c]{\includegraphics[width=0.5\linewidth]{LatexD.png}}%
+        \caption{Esquema de compilacion de LaTex}
+        \label{fig:LatexD}
+    \textit{nota: En la figura se muestra el proceso de compilación de un documento LaTeX. El archivo fuente (.tex) se compila utilizando un motor LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX) para generar un archivo PDF. El proceso puede requerir varias pasadas para resolver referencias cruzadas, citas bibliográficas y otros elementos.}
+    \end{figure}
     
     %the example \cite{fellows_research_2021}. 
     
     \subsection{Propuesta de plantilla base en Latex}
     Al adoptar LaTeX y utilizar la plantilla base propuesta, los investigadores de la unidad de posgrado SOE podrán producir documentos de alta calidad que cumplan con los estándares internacionales de publicación. 
     Esto no solo facilitará la difusión de sus investigaciones, sino que también contribuirá a elevar el prestigio académico de la unidad de posgrado.\\
+    Nota: La platilla que se muestra a continuación no cuenta con el formato UTF8 que ayuda a la visualización de caracteres especiales en español, sin embargo, se puede agregar en el preámbulo del documento.\\
     Plantilla ejemplo para la creación de artículos científicos en LaTeX:
     \begin{lstlisting}[style=mystyle]
       
@@ -386,16 +395,17 @@ El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
     
 Una vez que se ha aplicado la plantilla base propuesta en Latex en la ecritura de este documento, se obtienen los siguientes resultados:
     \begin{enumerate}
-        \item Una alta calidad tipografía, con control preciso sobre la tipografía y el espaciado, tambien en la selección de funtes y alineados.
-        \item Una estructura clara y consistente en todo el documento, con una variedad de plantillas y estilos predefinidos.
-        \item Una gestión eficiente de citas con paquetes como biblatex y natbib, con una amplia variedad de estilos de citación.
-        \item Una integración fluida de gráficos generados con herramientas externas, como TikZ o pgfplots.
-        \item Una facilidad para la creación de tablas complejas con un código legible.
-        \item Una facilidad para la escritura de ecuaciones complejas con un código legible.
-        \item Una facilidad para la automatización de la generación de bibliografías y la inserción de citas.
+        \item Control preciso sobre la tipografía y el espaciado, tambien en la selección de funtes y alineados.
+        \item Estructura clara y consistente en todo el documento, con una variedad de plantillas y estilos predefinidos.
+        \item Gestión eficiente de citas con paquetes como biblatex y natbib, con una amplia variedad de estilos de citación.
+        \item Integración fluida de gráficos generados con herramientas externas, como TikZ o pgfplots.
+        \item Facilidad para la creación de tablas complejas con un código legible.
+        \item Facilidad para la escritura de ecuaciones complejas con un código legible.
+        \item Facilidad para la automatización de la generación de bibliografías y la inserción de citas.
     \end{enumerate}
-Todas estas características hacen de LaTeX una herramienta valiosa para los investigadores de la unidad de posgrado SOE, como tambien para la escritura de este documento.\\
-A continuación se presentan los resultados obtenidos en base a una comparativa realizada entre word vs LaTeX, después de haber aplicado el formato de "SOE" a la plantilla base propuesta en Latex.  \ref{tab:Comparativas}.
+    Todas estas características convierten a LaTeX en una herramienta pertinente para los investigadores de la Unidad de Posgrado SOE, ya que permite la creación de documentos científicos con un alto nivel de precisión, claridad y profesionalismo. 
+    Su capacidad para gestionar referencias bibliográficas, integrar ecuaciones matemáticas, tablas y gráficos con formato consistente, así como su compatibilidad con repositorios colaborativos como GitHub, facilita el trabajo académico y promueve buenas prácticas en la escritura científica.\\
+    A continuación se muestra un cuadro comparativo de la plantilla realizada entre word vs LaTeX, después de haber aplicado el formato base en Latex segun las normativa expuestas por SOE.  \ref{tab:Comparativas}.
 
 \vspace{0.5cm}
     \begin{table}[h!]
@@ -437,15 +447,14 @@ A continuación se presentan los resultados obtenidos en base a una comparativa 
         \label{tab:Comparativas}
     \end{table}
 \vspace{0.5cm}
-
-    \section{Discusion}
+    
+    \section{Conclusiones}
     La adopción de LaTeX en la escritura de este documetno ha permitido mejorar significativamente la calidad tipográfica en la investigación presentada. 
     Lo que se traduce en una presentación más profesional y legible de los resultados. Sin embargo, la curva de aprendizaje inicial puede representar un desafío para algunos investigadores, lo que requiere la implementación de programas de capacitación y soporte técnico.
     Por este motivo es que se propone la creación de un repositorio en GitHub con toda la documentación necesaria para iniciar en LaTeX, así como la organización de talleres y seminarios para capacitar a los investigadores en el uso de esta herramienta.
     Para un futuro trabajo se propone la creación de una plantilla en línea en Overleaf para facilitar su uso y colaboración, así como la publicación de la plantilla en un repositorio (GitHub, GitLab, etc.) para que esté disponible para todos los miembros de la unidad de posgrado SOE.
 
-    \section{Conclusiones}
-    Asimismo, se concluye que LaTeX facilita la estructuración lógica y la organización eficiente de documentos extensos, un aspecto particularmente valioso en la investigación académica. 
+    Se concluye que LaTeX facilita la estructuración lógica y la organización eficiente de documentos extensos, un aspecto particularmente valioso en la investigación académica. 
     La capacidad de LaTeX para separar el contenido del formato permite a los investigadores concentrarse en el desarrollo de sus ideas, delegando en el sistema la tarea de dar forma al documento. 
     La generación automática de índices y tablas de contenido simplifica la navegación del lector a través del texto, mejorando la accesibilidad a la información.
 
