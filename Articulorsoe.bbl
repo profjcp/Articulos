@@ -48,6 +48,45 @@
       \field{volume}{3}
       \field{year}{1997}
     \endentry
+    \entry{poley2000latex}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9c85562324a556c6e11832a03fe1f82b}{%
+           family={Poley\bibnamedelima Jr},
+           familyi={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Gerald\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81982e1687a6b079ae62a9783990c5d5}{%
+           family={Slater},
+           familyi={S\bibinitperiod},
+           given={Jay\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{fullhash}{a046bc263a61bf025ba345f76471687e}
+      \strng{bibnamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authorbibnamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authornamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authorfullhash}{a046bc263a61bf025ba345f76471687e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of allergy and clinical immunology}
+      \field{number}{6}
+      \field{title}{Latex allergy}
+      \field{volume}{105}
+      \field{year}{2000}
+      \field{pages}{1054\bibrangedash 1062}
+      \range{pages}{9}
+    \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
     \entry{knuth1997art}{book}{}
@@ -78,6 +117,45 @@
       \field{title}{The art of computer programming}
       \field{volume}{3}
       \field{year}{1997}
+    \endentry
+    \entry{poley2000latex}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9c85562324a556c6e11832a03fe1f82b}{%
+           family={Poley\bibnamedelima Jr},
+           familyi={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Gerald\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81982e1687a6b079ae62a9783990c5d5}{%
+           family={Slater},
+           familyi={S\bibinitperiod},
+           given={Jay\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{fullhash}{a046bc263a61bf025ba345f76471687e}
+      \strng{bibnamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authorbibnamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authornamehash}{a046bc263a61bf025ba345f76471687e}
+      \strng{authorfullhash}{a046bc263a61bf025ba345f76471687e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of allergy and clinical immunology}
+      \field{number}{6}
+      \field{title}{Latex allergy}
+      \field{volume}{105}
+      \field{year}{2000}
+      \field{pages}{1054\bibrangedash 1062}
+      \range{pages}{9}
     \endentry
   \enddatalist
 \endrefsection

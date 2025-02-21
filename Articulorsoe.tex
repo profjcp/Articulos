@@ -9,7 +9,7 @@
 % Se agradecen sus comentarios, contribuciones, reporte de bugs y la difusión de esta plantilla.
 
 % Tipo de documento ytamaño de letra
-\documentclass[10pt]{article}
+\documentclass[10pt,twocolumn,a4paper]{article}
 
 % Ajuste de lenguaje
 \usepackage[spanish, english]{babel}
@@ -139,12 +139,12 @@ https://orcid.org/0009-0009-9117-2441}
 
     \section{Introducción}
 
-LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física (\cite{knuth1997art}). 
+LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física \parencite{knuth1997art}.
 A diferencia de los procesadores de texto tradicionales, LaTeX ofrece precisión y control tipográfico, manejo excepcional de matemáticas y símbolos, gestión eficiente de referencias y citas, estructura y organización de documentos, portabilidad y compatibilidad. 
 Ejemplos: Universidades de renombre como el MIT y Stanford, organizaciones científicas como la Sociedad Americana de Física (APS), utilizan LaTeX para sus publicaciones.
 \textbf{¿Qué es Latex?}\\
 TeX es un programa de composición tipográfica desarrollado por Donald Knuth para su obra maestra The Art of Computer Programming. 
-Su función es transformar un archivo de texto plano en un documento de alta calidad, optimizado para impresión y visualización en pantalla. 
+Su función es transformar un archivo de texto plano en un documento de alta calidad, optimizado para impresión y visualización en pantalla.\textcite{poley2000latex} 
 Sobre esta base, se creó LaTeX, un sistema de macros diseñado para facilitar el uso de TeX y automatizar tareas comunes de formato.\\ 
 LaTeX se ha convertido en un referente para la publicación académica en disciplinas como matemáticas y física, debido a su capacidad para generar documentos de gran precisión tipográfica y a la calidad excepcional de sus fuentes en el ámbito del software libre.\\
 Estas son algunas de las principales razones por las que LaTeX es tan valioso en este campo:
@@ -278,15 +278,13 @@ Estas son algunas de las principales razones por las que LaTeX es tan valioso en
 
 
     El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
-    \begin{figure}[ht]
+    \begin{figure}[!ht]
         \centering
         \makebox[\linewidth][c]{\includegraphics[width=0.5\linewidth]{LatexD.png}}%
         \caption{Esquema de compilacion de LaTex}
         \label{fig:LatexD}
     \textit{nota: En la figura se muestra el proceso de compilación de un documento LaTeX. El archivo fuente (.tex) se compila utilizando un motor LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX) para generar un archivo PDF. El proceso puede requerir varias pasadas para resolver referencias cruzadas, citas bibliográficas y otros elementos.}
-    \end{figure}
-    
-    %the example \cite{fellows_research_2021}. 
+    \end{figure} 
     
     \subsection{Propuesta de plantilla base en Latex}
     Al adoptar LaTeX y utilizar la plantilla base propuesta, los investigadores de la unidad de posgrado SOE podrán producir documentos de alta calidad que cumplan con los estándares internacionales de publicación. 
