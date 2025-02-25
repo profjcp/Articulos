@@ -87,35 +87,6 @@
       \field{pages}{1054\bibrangedash 1062}
       \range{pages}{9}
     \endentry
-    \entry{rivera2023inteligencias}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=519748d81300d222ecaee8011c297de9}{%
-           family={Rivera\bibnamedelima Berrío},
-           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Juan\bibnamedelima Guillermo},
-           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Instituto de Matemáticas, UNAM}%
-      }
-      \strng{namehash}{519748d81300d222ecaee8011c297de9}
-      \strng{fullhash}{519748d81300d222ecaee8011c297de9}
-      \strng{bibnamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authorbibnamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authornamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authorfullhash}{519748d81300d222ecaee8011c297de9}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{iCartesiLibri}
-      \field{title}{Inteligencias artificiales generativas}
-      \field{year}{2023}
-    \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
     \entry{knuth1997art}{book}{}
@@ -185,35 +156,6 @@
       \field{year}{2000}
       \field{pages}{1054\bibrangedash 1062}
       \range{pages}{9}
-    \endentry
-    \entry{rivera2023inteligencias}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=519748d81300d222ecaee8011c297de9}{%
-           family={Rivera\bibnamedelima Berrío},
-           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Juan\bibnamedelima Guillermo},
-           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Instituto de Matemáticas, UNAM}%
-      }
-      \strng{namehash}{519748d81300d222ecaee8011c297de9}
-      \strng{fullhash}{519748d81300d222ecaee8011c297de9}
-      \strng{bibnamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authorbibnamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authornamehash}{519748d81300d222ecaee8011c297de9}
-      \strng{authorfullhash}{519748d81300d222ecaee8011c297de9}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{iCartesiLibri}
-      \field{title}{Inteligencias artificiales generativas}
-      \field{year}{2023}
     \endentry
   \enddatalist
 \endrefsection

@@ -1,5 +1,4 @@
-% Plantilla latex para publicación de artículo científico en la revista "SOE"
-%
+% Plantilla latex para publicación de artículo científico en la revista SOE
 % @autor {Juan Carlos Peinado Pereira}
 % @correo {juanpeinado@uagrm.edu.bo}
 % @año 2025
@@ -9,13 +8,15 @@
 % Se agradecen sus comentarios, contribuciones, reporte de bugs y la difusión de esta plantilla.
 
 % Tipo de documento ytamaño de letra
-\documentclass[10pt,twocolumn,a4paper]{article}
+\documentclass[10pt,twocolumn]{article}
 
 % Ajuste de lenguaje
 \usepackage[spanish, english]{babel}
 
 % Tamaño de página y margenes
 \usepackage[letterpaper, top=2.5cm,bottom=3.5cm, left=3cm, right=2.5cm, marginparwidth=1.75cm]{geometry}
+
+\usepackage{titlesec} % Permite cambiar el tamaño de los títulos  
 
 % Permite manejo de ecuaciones y símbolos matemáticos
 \usepackage{amsmath, amssymb, amsthm, amsfonts}
@@ -75,6 +76,7 @@
     citecolor=black
 }
 \usepackage{listings} 
+\usepackage{colortbl}
 \usepackage{xcolor}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -82,18 +84,20 @@
 \definecolor{backcolor}{rgb}{0.95,0.95,0.92}
 
 \lstdefinestyle{mystyle}{
-	backgroundcolor=\color{backcolor},
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{magenta},
-	numberstyle=\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\ttfamily\footnotesize
+    backgroundcolor=\color{backcolor},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    linewidth=0.5\textwidth,
+    breaklines=true
 }
 
 % Headers config
 % Cambiar Volumen, Numero y páginas
 \lhead{
-    Fronteras Tecnologicas, Febrero 20xx, Vol. x, No. x, páginas xx – xx\\Disponible en línea para descarga en: \href{https://github.com/profjcp/Articulos/}{https://github.com/profjcp/Articulos/}\\ISSN: xx-xx, Postgrado de ingeniería en Ciencias de la Computación y Telecomunicaciones, UAGRM
+    Fronteras Tecnológicas, Febrero 2025, Vol. 1, No. 1, páginas xx – xx\\Disponible en línea para descarga en: \href{https://github.com/profjcp/Articulos/}{https://github.com/profjcp/Articulos/}\\ISSN: xx-xx, Postgrado de ingeniería en Ciencias de la Computación y Telecomunicaciones, UAGRM
 }
 \rhead{
     \includegraphics[width=1.0cm]{logo}}
@@ -107,16 +111,18 @@
 Santa Cruz de la Sierra, Bolivia \\
 https://orcid.org/0009-0009-9117-2441}
 
-
 \begin{document}
 \maketitle
+
+\titlespacing*{\section}{0pt}{0.5cm}{0.5cm}
 
 \selectlanguage{spanish}
 \begin{abstract}
     \textit{\normalsize Este artículo examina el uso de LaTeX como herramienta para la investigación, destacando sus ventajas sobre los procesadores de texto tradicionales. 
     Se enfoca en la precisión tipográfica, el manejo de matemáticas, la gestión de referencias y la estructura de documentos. 
-    El autor argumenta que LaTeX mejora la calidad y eficiencia en la producción de documentos científicos, especialmente en ciencias de la computación. El texto presenta una plantilla base en LaTeX para investigadores, junto con una comparativa entre Word y LaTeX.
-    Se concluye que LaTeX eleva el prestigio académico y facilita la difusión de la investigación, aunque requiere capacitación inicial.} 
+    El autor argumenta que LaTeX mejora la calidad y eficiencia en la producción de documentos científicos, especialmente en ciencias de la computación. 
+    El presente trabajo tiene como propósito promover el uso de LaTeX como una herramienta fundamental para la redacción científica entre los postgraduantes de la Unidad de Postgrado de Ciencias de la Computación en la Universidad Autónoma Gabriel René Moreno. 
+    Se busca motivar a los investigadores a adoptar este formato para la elaboración y publicación de sus trabajos de investigación, resaltando sus ventajas en cuanto a calidad tipográfica, estructuración de documentos y automatización de referencias.} 
     \vspace{0.5cm}
 
     \textbf{Palabras clave:} Procesador de texto, Herramientas de investigación, Tipografía, Gestión de referencial, LaTeX.
@@ -126,10 +132,10 @@ https://orcid.org/0009-0009-9117-2441}
 \selectlanguage{english}
 \begin{abstract}
     \textit{\normalsize This article examines the use of LaTeX as a research tool, highlighting its advantages over traditional word processors. 
-    It focuses on typographical accuracy, mathematics, reference management, and document structure. 
-    The author argues that LaTeX improves the quality and efficiency in the production of scientific documents, especially in computer science. 
-    The text presents a base LaTeX template for researchers, along with a comparison between Word and LaTeX. 
-    It is concluded that LaTeX increases academic prestige and facilitates the dissemination of research, although it requires initial training.}    
+    It focuses on typographical accuracy, mathematical handling, reference management and document structure. 
+    The author argues that LaTeX improves the quality and efficiency in the production of scientific papers, especially in computer science. 
+    The purpose of this paper is to promote the use of LaTeX as a fundamental tool for scientific writing among postgraduates of the Graduate Unit of Computer Science at the Universidad Autónoma Gabriel René Moreno. 
+    It seeks to motivate researchers to adopt this format for the preparation and publication of their research papers, highlighting its advantages in terms of typographical quality, document structuring and reference automation. }    
     \vspace{0.5cm}
 
     \textbf{Keywords:} Word processor, Research tools, Typography, Reference management, LaTeX.
@@ -138,16 +144,19 @@ https://orcid.org/0009-0009-9117-2441}
 \selectlanguage{spanish}
 
     \section{Introducción}
+    LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física \parencite{knuth1997art}.
 
-LaTeX, creado por Donald Knuth, es un programa de composición tipográfica que se ha convertido en el estándar de facto para la publicación de artículos científicos y libros académicos en campos como matemáticas y física \parencite{knuth1997art}.
-A diferencia de los procesadores de texto tradicionales, LaTeX ofrece precisión y control tipográfico, manejo excepcional de matemáticas y símbolos, gestión eficiente de referencias y citas, estructura y organización de documentos, portabilidad y compatibilidad. 
-Ejemplos: Universidades de renombre como el MIT y Stanford, organizaciones científicas como la Sociedad Americana de Física (APS), utilizan LaTeX para sus publicaciones.
+    A diferencia de los procesadores de texto tradicionales, LaTeX ofrece precisión y control tipográfico, manejo excepcional de matemáticas y símbolos, gestión eficiente de referencias y citas, estructura y organización de documentos, portabilidad y compatibilidad. 
+    Universidades de renombre como el MIT y Stanford, y 6 organizaciones científicas, como la Sociedad Americana de Física (APS), utilizan LaTeX para sus publicaciones.
+
 \textbf{¿Qué es Latex?}\\
 TeX es un programa de composición tipográfica desarrollado por Donald Knuth para su obra maestra The Art of Computer Programming. 
-Su función es transformar un archivo de texto plano en un documento de alta calidad, optimizado para impresión y visualización en pantalla.\textcite{poley2000latex} 
-Sobre esta base, se creó LaTeX, un sistema de macros diseñado para facilitar el uso de TeX y automatizar tareas comunes de formato.\\ 
+Su función es transformar un archivo de texto plano en un documento de alta calidad, optimizado para impresión y visualización en pantalla. \textcite{poley2000latex} 
+Sobre esta base, se creó LaTeX, un sistema de macros diseñado para facilitar el uso de TeX y automatizar tareas comunes de formato.
+
 LaTeX se ha convertido en un referente para la publicación académica en disciplinas como matemáticas y física, debido a su capacidad para generar documentos de gran precisión tipográfica y a la calidad excepcional de sus fuentes en el ámbito del software libre.\\
 Estas son algunas de las principales razones por las que LaTeX es tan valioso en este campo:
+
 \begin{enumerate}  
     \item Precisión y control tipográfico:
     \begin{enumerate}
@@ -181,39 +190,71 @@ Estas son algunas de las principales razones por las que LaTeX es tan valioso en
     \end{enumerate}
 \end{enumerate} 
  
-{\raggedleft \textbf{¿Quienes emplean Latex?}}
+{\raggedleft \textbf{¿Quiénes emplean LaTeX?}}
+LaTeX es una herramienta ampliamente utilizada en el ámbito académico y científico debido a su capacidad para gestionar documentos con un alto nivel de precisión tipográfica y estructural. 
+Universidades de prestigio mundial, como el MIT, Stanford, Harvard, Oxford y Cambridge, han adoptado LaTeX para la preparación de tesis, artículos y otros documentos académicos. 
+Su uso no solo garantiza un formato estandarizado y profesional, sino que también facilita la gestión de referencias bibliográficas, ecuaciones matemáticas y diagramas complejos, aspectos fundamentales en la redacción de trabajos de alta calidad.
 
-{\raggedleft \textbf{Instituciones que utilizan LaTeX:}}
+Además de su implementación en universidades, LaTeX es empleado en destacados institutos de investigación, como el CERN, el Instituto Max Planck, el CNRS y el Instituto Nacional de Estándares y Tecnología (NIST), donde se utiliza para la publicación de estudios y documentos técnicos. 
+Asimismo, organizaciones científicas de gran influencia, como la Sociedad Americana de Física (APS), la Asociación para la Maquinaria de la Computación (ACM) y la Sociedad de Matemáticas Aplicadas e Industriales (SIAM), han adoptado LaTeX como estándar para la elaboración de sus publicaciones. 
+Su versatilidad y precisión han convertido a LaTeX en una herramienta esencial para la comunicación científica y técnica a nivel global.
 
-\begin{itemize}
-	\item Universidades de renombre: Universidades líderes como el MIT, Stanford, Harvard, Oxford y Cambridge, entre muchas otras, utilizan LaTeX para la preparación de tesis, artículos y otros documentos académicos.
-	\item Institutos de investigación: Institutos como el CERN, el Instituto Max Planck, el CNRS y el Instituto Nacional de Estándares y Tecnología (NIST) también emplean LaTeX para sus publicaciones.
-	\item Organizaciones científicas: Organizaciones como la Sociedad Americana de Física (APS), la Asociación para la Maquinaria de la Computación (ACM) y la Sociedad de Matemáticas Aplicadas e Industriales (SIAM) utilizan LaTeX como estándar para sus publicaciones.
-\end{itemize}
+%{\raggedleft \textbf{Instituciones que utilizan LaTeX:}}
+
+%\begin{itemize}
+%	\item Universidades de renombre: Universidades líderes como el MIT, Stanford, Harvard, Oxford y Cambridge, entre muchas otras, utilizan LaTeX para la preparación de tesis, artículos y otros documentos académicos.
+%	\item Institutos de investigación: Institutos como el CERN, el Instituto Max Planck, el CNRS y el Instituto Nacional de Estándares y Tecnología (NIST) también emplean LaTeX para sus publicaciones.
+%	\item Organizaciones científicas: Organizaciones como la Sociedad Americana de Física (APS), la Asociación para la Maquinaria de la Computación (ACM) y la Sociedad de Matemáticas Aplicadas e Industriales (SIAM) utilizan LaTeX como estándar para sus publicaciones.
+%\end{itemize}
 
 {\raggedleft \textbf{Publicaciones que utilizan LaTeX como estándar:}}
+LaTeX es un estándar ampliamente utilizado en la publicación de artículos científicos en revistas de alto impacto, especialmente en áreas como física, matemáticas, informática, ingeniería y ciencias de la computación. 
+La mayoría de estas revistas requieren que los manuscritos sean presentados en formato LaTeX debido a sus ventajas en la gestión de ecuaciones matemáticas, referencias bibliográficas y diagramas complejos. 
+Además, este sistema garantiza una presentación tipográfica uniforme y profesional, facilitando la revisión y publicación de los trabajos.
 
-\begin{itemize}
-	\item Revistas científicas: La mayoría de las revistas científicas de alto impacto en áreas como física, matemáticas, informática, ingeniería y ciencias de la computación requieren que los manuscritos se presenten en formato LaTeX.
-	\item Actas de conferencias: Las actas de conferencias de prestigio en ciencias de la computación y otras áreas técnicas a menudo utilizan LaTeX para garantizar la uniformidad y calidad de los documentos.
-	\item Libros académicos: Muchos libros de texto y obras de referencia en ciencias y matemáticas se publican utilizando LaTeX debido a su capacidad para manejar notaciones matemáticas complejas y producir documentos de alta calidad.
-\end{itemize}
+Las actas de conferencias de prestigio en ciencias de la computación y otras disciplinas técnicas también han adoptado LaTeX como formato estándar. 
+Conferencias reconocidas internacionalmente, como las organizadas por la IEEE, ACM y SIAM, utilizan LaTeX para asegurar la coherencia y calidad de los documentos presentados. 
+Esto permite que los artículos aceptados se integren de manera eficiente en los volúmenes oficiales de actas, manteniendo una estructura homogénea y un formato optimizado para su consulta y distribución.
+
+Asimismo, LaTeX es ampliamente utilizado en la publicación de libros académicos, particularmente en disciplinas científicas y matemáticas. 
+Muchos libros de texto y obras de referencia se elaboran en este formato debido a su capacidad para manejar expresiones matemáticas complejas, gráficos y esquemas sin comprometer la calidad visual. 
+Su precisión tipográfica y su flexibilidad lo convierten en la herramienta preferida para autores y editores que buscan producir publicaciones de alta calidad en el ámbito académico.
+%\begin{itemize}
+%	\item Revistas científicas: La mayoría de las revistas científicas de alto impacto en áreas como física, matemáticas, informática, ingeniería y ciencias de la computación requieren que los manuscritos se presenten en formato LaTeX.
+%	\item Actas de conferencias: Las actas de conferencias de prestigio en ciencias de la computación y otras áreas técnicas a menudo utilizan LaTeX para garantizar la uniformidad y calidad de los documentos.
+%	\item Libros académicos: Muchos libros de texto y obras de referencia en ciencias y matemáticas se publican utilizando LaTeX debido a su capacidad para manejar notaciones matemáticas complejas y producir documentos de alta calidad.
+%\end{itemize}
 
 {\raggedleft \textbf{Fuentes de datos que emplean LaTeX:}}
-\begin{itemize}
-	\item Google Scholar: Google Scholar indexa artículos científicos y otros documentos académicos en una amplia variedad de disciplinas. Muchos de estos documentos están escritos en LaTeX, especialmente en áreas como matemáticas, física e informática.
-	\item Scopus: Scopus es una base de datos bibliográfica de Elsevier que indexa una gran cantidad de literatura científica, incluyendo artículos de revistas, actas de conferencias y libros. Muchos de los documentos indexados en Scopus están escritos en LaTeX.
-	\item Web of Science: Web of Science es otra base de datos bibliográfica ampliamente utilizada que indexa publicaciones científicas de diversas disciplinas. Al igual que Scopus, muchos de los documentos indexados en Web of Science están escritos en LaTeX.
-\end{itemize}
+Diversas bases de datos y motores de búsqueda académica indexan una gran cantidad de documentos científicos escritos en LaTeX. 
+Google Scholar, una de las plataformas más utilizadas para la búsqueda de artículos y libros académicos, alberga miles de documentos elaborados con este sistema, especialmente en áreas como matemáticas, física e informática. 
+La facilidad de estructuración y citación que ofrece LaTeX permite que estos documentos sean organizados y recuperados de manera eficiente dentro de la plataforma.
+
+Scopus, la base de datos bibliográfica de Elsevier, también indexa una gran cantidad de literatura científica escrita en LaTeX. 
+Su extenso catálogo incluye artículos de revistas, actas de conferencias y libros en diversas disciplinas, donde el uso de LaTeX es predominante en ciencias exactas y tecnología. 
+La adopción de este formato garantiza que los documentos mantengan una estructura clara y profesional, facilitando su acceso y revisión por parte de investigadores de todo el mundo.
+
+Otra fuente de información clave en el ámbito científico es Web of Science, una base de datos ampliamente utilizada que indexa publicaciones de diversas áreas del conocimiento. 
+Al igual que Scopus, esta plataforma alberga numerosos documentos generados en LaTeX, los cuales son utilizados por investigadores y académicos para la difusión de estudios de alto nivel. 
+Su implementación en estas bases de datos refuerza el valor de LaTeX como herramienta esencial para la comunicación científica global.
+
+Este artículo busca promover el uso de herramientas especializadas en la escritura académica para optimizar la presentación de documentos y asegurar su aceptación en revistas científicas y congresos internacionales. 
+Se destaca la accesibilidad de LaTeX mediante plataformas colaborativas y plantillas, facilitando su uso en artículos, tesis y otros trabajos académicos. 
+El texto presenta una plantilla LaTeX básica y compara Word con LaTeX, concluyendo que LaTeX mejora el prestigio académico y la difusión de la investigación, aunque requiere aprendizaje inicial.
+%A través de este artículo, se pretende concientizar sobre la importancia de utilizar herramientas especializadas en la escritura académica, optimizando la presentación de los documentos y garantizando su aceptación en revistas científicas de alto impacto y congresos internacionales. 
+%Además, se destaca la accesibilidad de LaTeX mediante plataformas colaborativas y repositorios de plantillas, facilitando su integración en la producción de artículos científicos, tesis y otros documentos académicos. 
+%El texto presenta una plantilla base en LaTeX para investigadores, junto con una comparativa entre Word y LaTeX. Se concluye que LaTeX eleva el prestigio académico y facilita la difusión de la investigación, aunque requiere capacitación inicial. 
 
 \newpage % Agrega o elimina estos saltos de página de acuerdo a tus necesidades.
 \vspace{0.5cm}
 
     \section{Resultados}
-    El estudio destaca las numerosas ventajas de LaTeX para investigadores, incluyendo su capacidad para generar documentos con calidad tipográfica superior, manejo eficiente de fórmulas matemáticas y símbolos complejos, y automatización en la gestión de referencias y citas bibliográficas. 
+    LaTeX es una herramienta esencial para la redacción científica, ampliamente utilizada en la comunidad académica y de investigación. 
+    Su capacidad para manejar ecuaciones matemáticas complejas, gestionar bibliografías de manera automatizada y generar documentos con una presentación tipográfica profesional lo posiciona como una opción superior en comparación con procesadores de texto convencionales. 
+    Además, su compatibilidad con múltiples plataformas y su integración con gestores de referencias como BibTeX y herramientas de colaboración como Overleaf, lo convierte en un recurso indispensable para investigadores de diversas disciplinas. 
     Estas características son especialmente valiosas en la investigación en ciencias de la computación, donde la precisión y presentación profesional son fundamentales. 
-    Además, se proporcionará una plantilla base como apoyo a los investigadores de la unidad de posgrado SOE.
-    \subsection{Fases a tomar en cuenta para la elaboración de una plantilla base en Latex :}
+    Además, se proporcionará una plantilla base como apoyo a los investigadores de la unidad de posgrado SOE \parencite{rivera2023inteligencias}.
+    \subsection{Fases para la elaboración de una plantilla base en Latex :}
     
 {\raggedleft \textbf{Definir los requisitos:}}
     \begin{enumerate}
@@ -262,7 +303,7 @@ Estas son algunas de las principales razones por las que LaTeX es tan valioso en
     A diferencia de los procesadores de texto tradicionales, LaTeX no formatea el documento directamente mientras se escribe. 
     En cambio, se utilizan comandos y etiquetas para marcar la estructura y el contenido del documento, y luego un programa llamado "motor de LaTeX" se encarga de procesar estas instrucciones y generar el documento final.
     
-    \textbf{Aquí hay algunos puntos clave sobre el proceso de compilación:}
+{\raggedleft \textbf{Aquí hay algunos puntos clave sobre el proceso de compilación:}}
 
     Código fuente: El documento LaTeX comienza como un archivo de texto con extensión .tex. Este archivo contiene el texto del documento, así como los comandos y etiquetas que controlan el formato, la estructura y otros elementos.
 
@@ -279,27 +320,28 @@ Estas son algunas de las principales razones por las que LaTeX es tan valioso en
 
     El siguiente esquema muestra el proceso de compilación de un documento LaTeX:
     \begin{figure}[!ht]
+    \caption{Esquema de compilacion de LaTex}
         \centering
         \makebox[\linewidth][c]{\includegraphics[width=0.5\linewidth]{LatexD.png}}%
-        \caption{Esquema de compilacion de LaTex}
         \label{fig:LatexD}
     \textit{nota: En la figura se muestra el proceso de compilación de un documento LaTeX. El archivo fuente (.tex) se compila utilizando un motor LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX) para generar un archivo PDF. El proceso puede requerir varias pasadas para resolver referencias cruzadas, citas bibliográficas y otros elementos.}
     \end{figure} 
     
     \subsection{Propuesta de plantilla base en Latex}
     Al adoptar LaTeX y utilizar la plantilla base propuesta, los investigadores de la unidad de posgrado SOE podrán producir documentos de alta calidad que cumplan con los estándares internacionales de publicación. 
-    Esto no solo facilitará la difusión de sus investigaciones, sino que también contribuirá a elevar el prestigio académico de la unidad de posgrado.\\
-    Nota: La platilla que se muestra a continuación no cuenta con el formato UTF8 que ayuda a la visualización de caracteres especiales en español, sin embargo, se puede agregar en el preámbulo del documento.\\
+    Esto no solo facilitará la difusión de sus investigaciones, sino que también contribuirá a elevar el prestigio académico de la unidad de posgrado.
+
+    Nota: La platilla que se muestra a continuación no cuenta con el formato UTF8 que ayuda a la visualización de caracteres especiales en español, sin embargo, se puede agregar en el preámbulo del documento.
+
     Plantilla ejemplo para la creación de artículos científicos en LaTeX:
+
     \begin{lstlisting}[style=mystyle]
       
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % @autor {Juan Carlos Peinado Pereira}
         % @correo {juanpeinado@uagrm.edu.bo}
         % @ano 2025
         % @version 1.0
         % @licencia CC BY 4.0
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
         % Se agradecen sus comentarios, contribuciones, y la difusion de esta plantilla
         
@@ -402,59 +444,86 @@ Una vez que se ha aplicado la plantilla base propuesta en Latex en la ecritura d
         \item Facilidad para la automatización de la generación de bibliografías y la inserción de citas.
     \end{enumerate}
     Todas estas características convierten a LaTeX en una herramienta pertinente para los investigadores de la Unidad de Posgrado SOE, ya que permite la creación de documentos científicos con un alto nivel de precisión, claridad y profesionalismo. 
-    Su capacidad para gestionar referencias bibliográficas, integrar ecuaciones matemáticas, tablas y gráficos con formato consistente, así como su compatibilidad con repositorios colaborativos como GitHub, facilita el trabajo académico y promueve buenas prácticas en la escritura científica.\\
+    Su capacidad para gestionar referencias bibliográficas, integrar ecuaciones matemáticas, tablas y gráficos con formato consistente, así como su compatibilidad con repositorios colaborativos como GitHub, facilita el trabajo académico y promueve buenas prácticas en la escritura científica.
+
     A continuación se muestra un cuadro comparativo de la plantilla realizada entre word vs LaTeX, después de haber aplicado el formato base en Latex segun las normativa expuestas por SOE.  \ref{tab:Comparativas}.
 
 \vspace{0.5cm}
-    \begin{table}[h!]
+    \begin{table}[ht!]
+        \caption{Comparativa entre Word y LaTeX, en la aplicacion de plantillas base.}
         \centering
-        \resizebox{16cm}{!}{
+        \resizebox{0.5\textwidth}{!}{
             \begin{tabular}{|c|c|c|}
             \hline
-            \textbf{Aspectos} & \textbf{Word} & \textbf{Latex} \\ \hline
+            \textbf{Aspectos} & \textbf{Word} & \textbf{LaTeX} \\ \hline
+            \rowcolor{gray!30}
             \textbf{Tipografía}      &         &                   \\ \hline
             {Calidad}         & Generalmente buena, pero limitada en opciones de personalización.          & Excelente, con control preciso sobre la tipografía y el espaciado.\\ \hline
             {Control}         & Limitado a las opciones predefinidas.          & Amplio control sobre todos los aspectos tipográficos.                  \\ \hline
             {Consistencia}    & Puede ser difícil mantener la consistencia en documentos largos.          & Garantiza la consistencia en todo el documento.                  \\ \hline
+            \rowcolor{gray!30}
             \textbf{Formatos}        &         &                   \\ \hline
             {Predefinidos}    & Ofrece una variedad de plantillas y estilos predefinidos.          & Permite el uso de clases de documentos y paquetes para diferentes formatos.\\ \hline
             {Personalización} & Permite la personalización, pero puede ser complejo y llevar mucho tiempo.          & Ofrece una gran flexibilidad para la personalización.                \\ \hline
             {Estructura}      & Se basa en una interfaz WYSIWYG (lo que ves es lo que obtienes).          & Se basa en comandos y etiquetas para estructurar el documento.                  \\ \hline
+            \rowcolor{gray!30}
             \textbf{Fuentes}         &         &                   \\ \hline
             {Variedad}        & Ofrece una variedad de plantillas y estilos predefinidos.          & Amplia variedad de fuentes disponibles, especialmente para matemáticas y símbolos.\\ \hline
             {Control}         & Control limitado sobre la selección y el uso de fuentes.          & Control preciso sobre la selección y el uso de fuentes.                \\ \hline
+            \rowcolor{gray!30}
             \textbf{Citas bibliográficas}         &         &                   \\ \hline
             {Gestion}         & Ofrece herramientas para la gestión de citas, pero pueden ser limitadas.          & Ofrece una gestión eficiente de citas con paquetes como biblatex y natbib.                 \\ \hline
             {Estilo}          & Permite el uso de diferentes estilos de citación.          & Permite el uso de una amplia variedad de estilos de citación.\\ \hline
             {Automatización}  & Ofrece cierta automatización, pero puede requerir intervención manual.          & Automatiza la generación de bibliografías y la inserción de citas.                \\ \hline
+            \rowcolor{gray!30}
             \textbf{Gráficos}        &         &                   \\ \hline
             {Creación}        & Permite la creación de gráficos básicos dentro del documento.          & Requiere el uso de herramientas externas (como TikZ o pgfplots) para generar gráficos de alta calidad.                \\ \hline
             {Personalización} & Ofrece opciones de personalización limitadas.          & Ofrece un alto grado de personalización para la apariencia de los gráficos.\\ \hline
             {Integración}     & Integración sencilla de gráficos creados en otras aplicaciones.          & Integración fluida de gráficos generados con herramientas externas.              \\ \hline
+            \rowcolor{gray!30}
             \textbf{Tablas}          &         &                   \\ \hline
             {Creación}        & Permite la creación de tablas con una interfaz gráfica.        & Se crean mediante comandos y entornos.                \\ \hline
             {Formato}         & Ofrece opciones de formato básicas.          & Permite un control preciso sobre el formato y la apariencia de las tablas.\\ \hline
             {Complejidad}     & Puede ser complicado crear tablas complejas con múltiples filas y columnas.          & Facilita la creación de tablas complejas con un código legible.              \\ \hline
+            \rowcolor{gray!30}
             \textbf{Expresiones matemáticas}          &         &                   \\ \hline
             {Escritura}        & Permite la inserción de ecuaciones con un editor de ecuaciones.        & Se escriben utilizando comandos y símbolos.                \\ \hline
             {Calidad}         & La calidad de las expresiones matemáticas puede ser limitada.         & Produce expresiones matemáticas de alta calidad con una tipografía profesional.\\ \hline
             {Complejidad}     & Puede ser complicado escribir ecuaciones complejas.          & Facilita la escritura de ecuaciones complejas con un código legible.              \\ \hline
             \end{tabular}
         }
-        \caption{Comparativa entre Word y Latex, en la aplicacion de plantillas base.}
+        \textit{Nota: Se muestra un cuadro comparativo de la plantilla realizada entre Word y LaTeX, después de haber aplicado el formato base en LaTeX según las normativas expuestas por SOE. Fuente. Elaboración propia.}
         \label{tab:Comparativas}
     \end{table}
 \vspace{0.5cm}
+Word y LaTeX son herramientas con enfoques distintos para la creación y edición de documentos. 
+Word, basado en una interfaz WYSIWYG, facilita la edición visual y la inserción de contenido sin necesidad de conocer un lenguaje de marcado. 
+Sin embargo, esto limita el control sobre la tipografía, la consistencia del formato y la personalización, especialmente en documentos extensos. 
+Por otro lado, LaTeX ofrece una tipografía de mayor calidad y precisión, garantizando la coherencia en todo el documento. 
+Su estructura basada en comandos permite un formato altamente personalizable, aunque requiere una curva de aprendizaje más pronunciada. 
+La gestión de citas en Word es funcional, pero menos eficiente que en LaTeX, donde los paquetes como Biblatex y Natbib automatizan la inserción y organización de referencias.
+
+LaTeX facilita la estructuración lógica y la organización eficiente de documentos extensos, un aspecto particularmente valioso en la investigación académica. 
+La capacidad de LaTeX para separar el contenido del formato permite a los investigadores concentrarse en el desarrollo de sus ideas, delegando en el sistema la tarea de dar forma al documento. 
+La generación automática de índices y tablas de contenido simplifica la navegación del lector a través del texto, mejorando la accesibilidad a la información.
+
+En cuanto a gráficos y tablas, Word permite la creación y edición mediante herramientas integradas, lo que facilita su uso pero restringe la personalización avanzada. 
+LaTeX, en cambio, requiere el uso de herramientas externas como TikZ o pgfplots , lo que permite gráficos de alta calidad con una personalización total. 
+En la gestión de tablas, Word ofrece opciones básicas y una interfaz gráfica intuitiva, pero puede complicarse en tablas más complejas. LaTeX, mediante entornos específicos, permite definir tablas detalladas y estructuradas de manera precisa. 
+En el ámbito de las expresiones matemáticas, Word proporciona un editor visual, pero con limitaciones de calidad y complejidad. LaTeX, en cambio, genera ecuaciones de alta calidad con tipografía profesional, siendo la opción preferida para documentos científicos y técnicos.
     
     \section{Conclusiones}
-    La adopción de LaTeX en la escritura de este documetno ha permitido mejorar significativamente la calidad tipográfica en la investigación presentada. 
-    Lo que se traduce en una presentación más profesional y legible de los resultados. Sin embargo, la curva de aprendizaje inicial puede representar un desafío para algunos investigadores, lo que requiere la implementación de programas de capacitación y soporte técnico.
-    Por este motivo es que se propone la creación de un repositorio en GitHub con toda la documentación necesaria para iniciar en LaTeX, así como la organización de talleres y seminarios para capacitar a los investigadores en el uso de esta herramienta.
+    La adopción de LaTeX en la escritura de este documento ha permitido mejorar significativamente la calidad tipográfica en la investigación presentada. 
+    Lo que se traduce en una presentación más profesional y legible de los resultados. Sin embargo, la curva de aprendizaje inicial puede representar un desafío para algunos investigadores, lo que requiere la implementación de programas de capacitación y soporte técnico. 
+    Por este motivo es que se pro- pone la creación de un repositorio en GitHub con toda la documentación necesaria para iniciar en LaTeX, así como la organización de talleres y seminarios para capacitar a los investigadores en el uso de esta herramienta. 
     Para un futuro trabajo se propone la creación de una plantilla en línea en Overleaf para facilitar su uso y colaboración, así como la publicación de la plantilla en un repositorio (GitHub, GitLab, etc.) para que esté disponible para todos los miembros de la unidad de posgrado SOE.
 
-    Se concluye que LaTeX facilita la estructuración lógica y la organización eficiente de documentos extensos, un aspecto particularmente valioso en la investigación académica. 
-    La capacidad de LaTeX para separar el contenido del formato permite a los investigadores concentrarse en el desarrollo de sus ideas, delegando en el sistema la tarea de dar forma al documento. 
-    La generación automática de índices y tablas de contenido simplifica la navegación del lector a través del texto, mejorando la accesibilidad a la información.
+    Entre las principales ventajas identificadas, se destaca la posibilidad de estructurar documentos de manera eficiente mediante el uso de secciones, figuras, tablas y referencias cruzadas, lo que mejora la organización y claridad del contenido. 
+    Asimismo, LaTeX permite automatizar procesos como la numeración de ecuaciones, la generación de índices y la actualización de citas, reduciendo errores y optimizando el tiempo de edición. 
+    Estas características han llevado a su adopción en revistas científicas de alto impacto, congresos internacionales y editoriales académicas, consolidando su papel como estándar en la producción de documentos científicos.
+
+    Por otra parte, los resultados evidencian que, aunque LaTeX presenta una curva de aprendizaje más pronunciada en comparación con procesadores de texto tradicionales, el dominio de esta herramienta representa una inversión altamente beneficiosa para los investigadores. 
+    Una vez adquiridas las habilidades básicas, los usuarios experimentan una notable mejora en la eficiencia y calidad de sus documentos. Finalmente, el uso de repositorios colaborativos y plantillas predefinidas facilita la integración de LaTeX en entornos de trabajo académico, promoviendo su implementación en universidades, centros de investigación y organizaciones científicas.
 
 %\nocite{*}
 %\bibliographystyle{apacite}
