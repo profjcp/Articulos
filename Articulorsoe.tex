@@ -8,7 +8,7 @@
 % Se agradecen sus comentarios, contribuciones, reporte de bugs y la difusión de esta plantilla.
 
 % Tipo de documento ytamaño de letra
-\documentclass[10pt,twocolumn]{article}
+\documentclass[12pt,twocolumn]{article}
 
 % Ajuste de lenguaje
 \usepackage[spanish, english]{babel}
@@ -21,13 +21,11 @@
 % Permite manejo de ecuaciones y símbolos matemáticos
 \usepackage{amsmath, amssymb, amsthm, amsfonts}
 
-% Permite el manejo de caracteres especiales en el español
 \usepackage[utf8]{inputenc} 
-\usepackage[T1]{fontenc}
-
 % Permite el manejo de citas bibliográficas
 \usepackage[backend=biber, style=apa, natbib=true]{biblatex}
 \usepackage{csquotes}
+
 % Permite el manejo de citas bibliográficas
 \addbibresource{referencias.bib}
 % Permite el manejo de citas bibliográficas
@@ -55,17 +53,17 @@
 % Personalizar los encabezados y pies de página
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\setlength{\headheight}{36.2396pt}
+\setlength{\headheight}{55.98592pt}
 \addtolength{\topmargin}{-24.2396pt}
 
 % Ruta para imagenes
 \graphicspath{{image/}}
 
 % Ajusta la sangría
-\setlength{\parindent}{1cm}
+\setlength{\parindent}{0pt}
 
 % Ajusta el espacio entre renglones
-\setlength{\parskip}{0.5cm}
+\setlength{\parskip}{\baselineskip}
 
 % Paquete para hipervinculos (debe ir después de cite y apacite)
 \usepackage{hyperref}
@@ -97,10 +95,10 @@
 % Headers config
 % Cambiar Volumen, Numero y páginas
 \lhead{
-    Fronteras Tecnológicas, Febrero 2025, Vol. 1, No. 1, páginas xx – xx\\Disponible en línea para descarga en: \href{https://github.com/profjcp/Articulos/}{https://github.com/profjcp/Articulos/}\\ISSN: xx-xx, Postgrado de ingeniería en Ciencias de la Computación y Telecomunicaciones, UAGRM
+    Fronteras Tecnológicas, Febrero 2025, Vol. 1, No. 1, páginas xx – xx\\Disponible en línea para descarga en: \href{https://github.com/profjcp/Articulos/}{https://github.com/profjcp/Articulos/}\\ISSN: xx-xx, Postgrado SOE, UAGRM
 }
 \rhead{
-    \includegraphics[width=1.0cm]{logo}}
+    \includegraphics[width=1.5cm, height=1.5cm]{logo}}
 \headsep=60pt
 
 % Información del artículo
@@ -113,8 +111,9 @@ https://orcid.org/0009-0009-9117-2441}
 
 \begin{document}
 \maketitle
-
-\titlespacing*{\section}{0pt}{0.5cm}{0.5cm}
+% Espacios entre los elementos de titulos y subtitulos.
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\titlespacing*{\subsection}{0pt}{0cm}{0cm}
 
 \selectlanguage{spanish}
 \begin{abstract}
@@ -322,7 +321,7 @@ El texto presenta una plantilla LaTeX básica y compara Word con LaTeX, concluye
     \begin{figure}[!ht]
     \caption{Esquema de compilacion de LaTex}
         \centering
-        \makebox[\linewidth][c]{\includegraphics[width=0.5\linewidth]{LatexD.png}}%
+        \makebox[\linewidth][c]{\includegraphics[width=8cm,height=8cm]{LatexD.png}}%
         \label{fig:LatexD}
     \textit{nota: En la figura se muestra el proceso de compilación de un documento LaTeX. El archivo fuente (.tex) se compila utilizando un motor LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX) para generar un archivo PDF. El proceso puede requerir varias pasadas para resolver referencias cruzadas, citas bibliográficas y otros elementos.}
     \end{figure} 
@@ -451,8 +450,7 @@ Una vez que se ha aplicado la plantilla base propuesta en Latex en la ecritura d
 \vspace{0.5cm}
     \begin{table}[ht!]
         \caption{Comparativa entre Word y LaTeX, en la aplicacion de plantillas base.}
-        \centering
-        \resizebox{0.5\textwidth}{!}{
+        \resizebox{8cm}{4cm}{
             \begin{tabular}{|c|c|c|}
             \hline
             \textbf{Aspectos} & \textbf{Word} & \textbf{LaTeX} \\ \hline
